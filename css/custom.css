@@ -6,8 +6,11 @@
     --green: #7CB06C;
     --blue: #00ABA9;
     --light-gray: #F0F0F0;
-    --gray: #E6E6E6;
+    /--gray: #E6E6E6;
   }
+.zaxis{
+    z-index: 9;
+}
 .red{
 	 background-color: var(--red)
  }
@@ -26,33 +29,33 @@
 .gray{
 	 background-color: var(--gray)
  }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Anton', sans-serif;
-}
-p {
-  font-family: 'Abel', sans-serif;
-}
-h1 {
-  font-size: 64px;
-}
-h2 {
-  font-size: 48px;
-}
-h3 {
-  font-size: 40px;
-}
-h4 {
-  font-size: 32px;
-}
-h5 {
-  font-size: 28px;
-}
-.logo {
-  width: 105px
-}
-.icon {
-  width: 18px
-}
+/*h1, h2, h3, h4, h5, h6 {*/
+  /*font-family: 'Anton', sans-serif;*/
+/*}*/
+/*p {*/
+  /*font-family: 'Abel', sans-serif;*/
+/*}*/
+/*h1 {*/
+  /*font-size: 64px;*/
+/*}*/
+/*h2 {*/
+  /*font-size: 48px;*/
+/*}*/
+/*h3 {*/
+  /*font-size: 40px;*/
+/*}*/
+/*h4 {*/
+  /*font-size: 32px;*/
+/*}*/
+/*h5 {*/
+  /*font-size: 28px;*/
+/*}*/
+/*.logo {*/
+  /*width: 105px*/
+/*}*/
+/*.icon {*/
+  /*width: 18px*/
+/*}*/
 .logo_position {
    z-index: -1;
    position: absolute;
@@ -62,4 +65,49 @@ h5 {
 /*-----Bootstrap Padding Fix ---*/
 [class*="col-"] {
     padding: 1rem;
+}
+/*--- circle circle ---*/
+
+.circle1Wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    margin: auto;
+    border: 1px solid;
+}
+.bubble1outer {
+    position: absolute;
+}
+.circle-textSmall div {
+    width: 125px;
+}
+.circle-textSmall div {
+    float: left;
+    width: 250px;
+    padding-top: 15%;
+    line-height: 1em;
+    margin-top: -0.5em;
+    text-align: center;
+    color: #000;
+}
+span.bubbleIconSmall > img {
+    width: 45%;
+    height: auto;
+}
+.circle-textSmall:after {
+    width: 125px;
+    padding-bottom: 125px;
+    margin-left: 50%;
+}
+.circle-textSmall:after {
+    content: var(--red);
+    display: block;
+    width: 250px;
+    height: 0;
+    padding-bottom: 250px;
+    background: #ccc;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
 }
