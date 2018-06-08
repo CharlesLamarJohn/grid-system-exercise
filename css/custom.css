@@ -29,6 +29,7 @@
  }
 body {
     background-color: var(--light-gray);
+    max-width: 768px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Anton', sans-serif;
@@ -70,8 +71,10 @@ h5 {
     line-height: 105px;
     text-align: center;
     font-weight: bolder;
-    border: 5px solid white;
+    border: 8px solid white;
     margin: 4px 4px;
+    box-sizing: border-box;
+
 }
 .icon {
     width: 18px;
@@ -97,7 +100,7 @@ h5 {
     z-index: -1000;
     position: absolute;
     margin-top: 2.5em;
-    width: 100%;
+    width: 100% !important;
 }
 /* unvisited link */
     a:link {
@@ -115,7 +118,25 @@ h5 {
     a:active {
         color: black;
     }
-.one {
+    .experiment {
+        max-width: 768px;
+    }
+
+@media screen and (min-width:576px) {
+    body {
+        background-color: blue;
+    }
+
+
+@media screen and (min-width:767px) {
+    body {
+        background-color: var(--light-gray);
+    }
 
 }
+@media screen and (min-width:768px) {
+    body {
+        background-color: green;
+    }
 
+}
