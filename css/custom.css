@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=poppins:400,500,700');
-.logo_position {
-    z-index: -1;
-    position: absolute;
-    top: 150px;
-}
+
 :root {
     --red: #E6563B;
     --orange: #EB9D3A;
