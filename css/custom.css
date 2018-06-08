@@ -70,6 +70,8 @@ h5 {
     line-height: 105px;
     text-align: center;
     font-weight: bolder;
+    border: 5px solid white;
+    margin: 4px 4px;
 }
 .icon {
     width: 18px;
@@ -113,3 +115,7 @@ h5 {
     a:active {
         color: black;
     }
+.one {
+
+}
+
