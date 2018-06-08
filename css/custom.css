@@ -121,22 +121,65 @@ h5 {
     .experiment {
         max-width: 768px;
     }
+/*this is the css for the navbar in small do not touch please*/
+ul {
+
+}
+.onel {
+    margin-right: 50px;
+    margin-left: 0;
+}
+.twol {
+    margin-left: 50px;
+    margin-right: 0;
+}
+
+.ht {
+    line-height: 50px;
+}
+@media screen and (max-width:575px) {
+    body {
+        background-color: salmon;
+    }
+    .navbar1 {
+        display: none;
+        visibility: hidden;
+    }
+}
+
 
 @media screen and (min-width:576px) {
     body {
         background-color: blue;
     }
-
-
-@media screen and (min-width:767px) {
-    body {
-        background-color: var(--light-gray);
+    .navbar {
+        display: none;
+        visibility: hidden;
     }
+    /*.nav1 {*/
+        /*padding: 0 -10em;*/
+        /*text-decoration: none;*/
+
+/*}*/
 
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:767px) {
     body {
-        background-color: green;
+        background-color: hotpink;
+    }
+    .logo_title {
+        float: left;
+    }
+    .navbar1 {
+        float: right;
+    }
+    .onel {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .twol {
+        margin-left: 0;
+        margin-right: 0;
     }
 
 }
