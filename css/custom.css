@@ -29,7 +29,7 @@
  }
 body {
     background-color: var(--light-gray);
-    max-width: 768px;
+    /*max-width: 768px;*/
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Anton', sans-serif;
@@ -118,9 +118,7 @@ h5 {
     a:active {
         color: black;
     }
-    .experiment {
-        max-width: 768px;
-    }
+
 /*this is the css for the navbar in small do not touch please*/
 ul {
 
@@ -145,6 +143,11 @@ ul {
         display: none;
         visibility: hidden;
     }
+    .yeah2 {
+        display: none;
+        visibility: hidden;
+    }
+
 }
 
 
@@ -152,10 +155,15 @@ ul {
     body {
         background-color: blue;
     }
-    .navbar {
+    .navbar{
         display: none;
         visibility: hidden;
     }
+    .yeah2 {
+        display: none;
+        visibility: hidden;
+    }
+
     /*.nav1 {*/
         /*padding: 0 -10em;*/
         /*text-decoration: none;*/
@@ -181,5 +189,19 @@ ul {
         margin-left: 0;
         margin-right: 0;
     }
+    .yeah1 {
+        display: none;
+        visibility: hidden;
+    }
+    /*.yeah2 {*/
+        /*display: inline-block;*/
+        /*visibility: visible;*/
+        /*position: relative;*/
+        /*margin: 0;*/
+        /*padding: 0;*/
+        /*right: 40px;*/
+    /*}*/
+
+
 
 }
