@@ -67,6 +67,13 @@ h5 {
     width: 105px;
     height: 105px;
 }
+
+.logo_div > div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+
+}
 .logo {
     width: 105px;
     height: 105px;
@@ -79,6 +86,7 @@ h5 {
     margin: 4px 4px;
     box-sizing: border-box;
     color: white;
+
 }
 .icon {
     width: 18px;
@@ -139,7 +147,7 @@ ul {
 .ht {
     line-height: 50px;
 }
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     body {
         background-color: salmon;
     }
@@ -152,19 +160,19 @@ ul {
         visibility: hidden;
     }
 
-    .image-security .image-face .image-com {
-        display: none;
-        visibility: hidden;
-    }
-    .image-head .image-google .image-mobile {
-        display: none;
-        visibility: hidden;
-    }
+    /*.image-security, .image-face, .image-com {*/
+        /*display: none;*/
+        /*!*visibility: hidden;*!*/
+    /*}*/
+    /*.image-head, .image-google, .image-mobile {*/
+        /*display: none;*/
+        /*visibility: hidden;*/
+    /*}*/
 
 }
 
 
-@media screen and (min-width:425px) {
+@media screen and (max-width:425px) {
     body {
         background-color: blue;
     }
@@ -176,15 +184,16 @@ ul {
         display: none;
         visibility: hidden;
     }
-    .image-com .image-face .image-security .image-size {
-        display: inline-grid;
-        visibility: visible;
-        grid-auto-columns: 1fr 1fr 1fr 1fr;
-    }
-    .image-mobile .image-google .image-head {
-        display: none;
-        visibility: hidden;
-    }
+    /*.image-com .image-face .image-security .image-size {*/
+        /*display: inline-grid;*/
+        /*visibility: visible;*/
+        /*float: none;*/
+    /*}*/
+    /*.image-mobile .image-google .image-head {*/
+        /*display: none;*/
+        /*visibility: hidden;*/
+        /*float: none;*/
+    /*}*/
     .navbar1 {
         visibility: visible;
         display: initial;
@@ -201,7 +210,7 @@ ul {
 /*}*/
 
 }
-@media screen and (min-width:768px) {
+@media screen and (max-width:768px) {
     body {
         background-color: hotpink;
     }
@@ -240,7 +249,7 @@ ul {
 
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
     .image-com .image-face .image-security .image-size .image-head .image-google .image-mobile {
         columns: auto;
         flex: 50%;
@@ -256,13 +265,24 @@ ul {
 }
 
 .image-col {
-    flex: 50%;
-    padding: 5px;
-    margin-top: 8px;
-    vertical-align: middle;
-    float: left;
-    width: 25%;
+    margin: 25px;
+}
 
+.image-col > div {
+    /*flex: 50%;*/
+    /*padding: 5px;*/
+    /*margin-top: 8px;*/
+    /*vertical-align: middle;*/
+    /*float: left;*/
+    /*width: 25%;*/
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icon_div > div {
+    display: inline-block;
+    margin: 10px 5px;
 }
 
 .column {
@@ -277,7 +297,7 @@ ul {
     display: table;
 }
 
-.image-moblie {
+.image-mobile {
     float: right;
     /*grid-auto-columns: auto;*/
     display: grid;
