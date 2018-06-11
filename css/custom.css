@@ -139,7 +139,7 @@ ul {
 .ht {
     line-height: 50px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
     body {
         background-color: salmon;
     }
@@ -176,6 +176,10 @@ ul {
         display: inline-grid;
         visibility: visible;
         grid-auto-columns: 1fr 1fr 1fr 1fr;
+    }
+    .navbar1 {
+        visibility: visible;
+        display: initial;
     }
 
     /*.nav1 {*/
