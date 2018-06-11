@@ -188,7 +188,11 @@ ul {
     .navbar1 {
         visibility: visible;
         display: initial;
+        position: absolute;
     }
+    /*.logo_title {*/
+        /*position: absolute;*/
+    /*}*/
 
     /*.nav1 {*/
         /*padding: 0 -10em;*/
