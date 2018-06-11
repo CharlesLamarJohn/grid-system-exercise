@@ -156,6 +156,10 @@ ul {
         display: none;
         visibility: hidden;
     }
+    .image-head .image-google .image-mobile {
+        display: none;
+        visibility: hidden;
+    }
 
 }
 
@@ -176,6 +180,10 @@ ul {
         display: inline-grid;
         visibility: visible;
         grid-auto-columns: 1fr 1fr 1fr 1fr;
+    }
+    .image-mobile .image-google .image-head {
+        display: none;
+        visibility: hidden;
     }
     .navbar1 {
         visibility: visible;
@@ -212,7 +220,7 @@ ul {
         visibility: hidden;
     }
 
-    .image-security .image-face .image-com .image-size .image-moblie .image-head .image-google{
+    .image-security .image-face .image-com .image-size .image-mobile .image-head .image-google{
         display: table-column-group;
         visibility: visible;
         grid-auto-columns: 1fr 1fr 1fr 1fr;
@@ -229,7 +237,7 @@ ul {
 }
 
 @media screen and (min-width: 992px) {
-    .image-com .image-face .image-security .image-size .image-head .image-google .image-moblie {
+    .image-com .image-face .image-security .image-size .image-head .image-google .image-mobile {
         columns: auto;
         flex: 50%;
         max-width: 50%;
